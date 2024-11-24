@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  width: 50%;
+}
+.container .col {
+  background-color: #999;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
